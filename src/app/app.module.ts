@@ -18,6 +18,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { IngredientsComponent } from './ingredients/ingredients.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { DataStorageService } from './shared/data-storage.service';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     TabsModule.forRoot(),
     TypeaheadModule.forRoot()
   ],
-  providers: [],
+  providers: [DataStorageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
