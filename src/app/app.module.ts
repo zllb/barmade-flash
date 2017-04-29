@@ -17,11 +17,14 @@ import { TypeaheadModule } from 'ngx-bootstrap';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+
+import { DataStorageService } from './shared/data-storage.service';
 import { RecipesComponent } from './recipes/recipes.component';
 import { IngredientsComponent } from './ingredients/ingredients.component';
 import { IngredientListComponent } from './ingredients/ingredient-list/ingredient-list.component';
 import { IngredientDetailComponent } from './ingredients/ingredient-detail/ingredient-detail.component';
 import { SearchComponent } from './search/search.component';
+
 
 @NgModule({
   declarations: [
@@ -50,7 +53,7 @@ import { SearchComponent } from './search/search.component';
     TabsModule.forRoot(),
     TypeaheadModule.forRoot()
   ],
-  providers: [],
+  providers: [DataStorageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
