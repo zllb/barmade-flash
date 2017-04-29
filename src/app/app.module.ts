@@ -21,6 +21,7 @@ import { RecipesComponent } from './recipes/recipes.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { IngredientListComponent } from './ingredients/ingredient-list/ingredient-list.component';
 import { IngredientDetailComponent } from './ingredients/ingredient-detail/ingredient-detail.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { IngredientDetailComponent } from './ingredients/ingredient-detail/ingre
     IngredientsComponent,
     DashboardComponent,
     IngredientListComponent,
-    IngredientDetailComponent
+    IngredientDetailComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
