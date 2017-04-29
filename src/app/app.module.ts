@@ -18,13 +18,17 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { IngredientsComponent } from './ingredients/ingredients.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { IngredientListComponent } from './ingredients/ingredient-list/ingredient-list.component';
+import { IngredientDetailComponent } from './ingredients/ingredient-detail/ingredient-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     IngredientsComponent,
-    DashboardComponent
+    DashboardComponent,
+    IngredientListComponent,
+    IngredientDetailComponent
   ],
   imports: [
     BrowserModule,

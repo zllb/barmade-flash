@@ -22,8 +22,8 @@ export class IngredientService {
       new Ingredient(11, 'Egg White','Egg Whites'),
       new Ingredient(12, 'Simple Syrup','Plain Simple Syrup'),
       new Ingredient(13, 'Orange Peel','Orange Peel Garnish'),
-      new Ingredient(5, 'Lemon peel','Lemon Peel garnish'),
-      new Ingredient(5, 'Gin','Pine Needle Piss')
+      new Ingredient(14, 'Lemon peel','Lemon Peel garnish'),
+      new Ingredient(15, 'Gin','Pine Needle Piss')
   ]
 
   getIngredients(){ 
