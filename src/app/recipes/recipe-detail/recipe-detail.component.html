@@ -1,3 +1,29 @@
-<p>
-  recipe-detail works!
-</p>
+<div class="row">
+  <div class="col-xs-12">
+    <img [src]="recipe.imagePath" alt="{{recipe.name}}" class="img-responsive" style="max-height: 250px">
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h2>{{recipe.name}}</h2>
+  </div>
+  <div class="col-xs-12">
+    <h4>{{recipe.desc}}</h4>
+    <table class="table table-responsive table-condensed table-hover">
+      <thead>
+        <tr class="head-margin">
+          <th class="leftHead">Ingredient</th>
+          <th class="centerHead">Description</th>
+          <th class="rightHead">Amount</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let ingredient of recipe.ingredients">
+          <td>{{ingredient.name}}</td>
+          <td>{{ingredient.description}}</td>
+          <td>{{ingredient.amount}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -26,7 +26,7 @@ export class RecipeService {
       2,
       'French Sidecar',
       'Perhaps most closely related to the older brandy crusta',
-      'https://en.wikipedia.org/wiki/Sidecar_(cocktail)#/media/File:Sidecar-cocktail.jpg',
+      'https://upload.wikimedia.org/wikipedia/commons/9/94/Sidecar-cocktail.jpg',
       [
         new Ingredient(1, 'Cointreau', 'its alcoholic'),
         new Ingredient(2, 'Lemon Juice', 'Fresh Lemon Juice'),
