@@ -14,7 +14,7 @@ export class IngredientListComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.ingredients)
+    // console.log(this.ingredients)
   }
 
 }
