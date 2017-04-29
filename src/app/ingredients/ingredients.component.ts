@@ -1,15 +1,23 @@
 import { Component, OnInit } from '@angular/core';
+import { IngredientsService } from './ingredient.service';
+import { Ingredient } from './ingredient.model';
 
 @Component({
   selector: 'app-ingredients',
   templateUrl: './ingredients.component.html',
-  styleUrls: ['./ingredients.component.css']
+  styleUrls: ['./ingredients.component.css'], 
+  providers: [IngredientsService]
 })
 export class IngredientsComponent implements OnInit {
 
-  constructor() { }
+  ingredients: Ingredient[];
+
+  constructor(
+    private ingredientsService: IngredientsService 
+  ) { }
 
   ngOnInit() {
+    this.ingredients = this.ingredientsService.getIngredients()
   }
 
 }

@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Ingredient } from './ingredient.model';
 
 @Injectable()
-export class IngredientService {
+export class IngredientsService {
 
   constructor() { }
 
