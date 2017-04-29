@@ -4,4 +4,12 @@ import { Http } from '@angular/http';
 @Injectable()
 export class DataStorageService {
   constructor(private http: Http ) {}
+
+  getIngredients(){
+
+  }
+
+  getRecipes(){
+    
+  }
 }

@@ -16,19 +16,26 @@ import { TypeaheadModule } from 'ngx-bootstrap';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { IngredientsComponent } from './ingredients/ingredients.component';
-import { RecipesComponent } from './recipes/recipes.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+<<<<<<< HEAD
 import { DataStorageService } from './shared/data-storage.service';
+=======
+import { RecipesComponent } from './recipes/recipes.component';
+import { IngredientsComponent } from './ingredients/ingredients.component';
+import { IngredientListComponent } from './ingredients/ingredient-list/ingredient-list.component';
+import { IngredientDetailComponent } from './ingredients/ingredient-detail/ingredient-detail.component';
+>>>>>>> bc36f3c2f5d8e82c8409d4588e7d6900dcee6479
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
+    DashboardComponent,
+    RecipesComponent,
     IngredientsComponent,
-    RecipesComponent
-    IngredientsComponent,
-    DashboardComponent
+    DashboardComponent,
+    IngredientListComponent,
+    IngredientDetailComponent
   ],
   imports: [
     BrowserModule,
