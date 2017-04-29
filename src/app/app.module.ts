@@ -17,12 +17,14 @@ import { TypeaheadModule } from 'ngx-bootstrap';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { IngredientsComponent } from './ingredients/ingredients.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    IngredientsComponent
+    IngredientsComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
