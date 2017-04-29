@@ -1,7 +1,27 @@
 <div class="container">
   <div class="row" >
     <div class="col-md-5">
-      <app-recipe-list></app-recipe-list>
+      <div class="input-group">
+        <input [(ngModel)]="recipeSelected"
+              [typeahead]="dataSource"
+              (typeaheadLoading)="changeTypeaheadLoading($event)"
+              (typeaheadNoResults)="changeTypeaheadNoResults($event)"
+              (typeaheadOnSelect)="typeaheadOnSelect($event)"
+              typeaheadOptionsLimit="7"
+              typeaheadOptionField="name"
+              placeholder="Search for a recipe"
+              class="form-control">
+        <div *ngIf="typeaheadLoading===true">
+          <i class="glyphicon glyphicon-refresh ng-hide"></i>
+        </div>
+        <div *ngIf="typeaheadNoResults===true">
+          <i class="glyphicon glyphicon-remove"></i> No Results Found
+        </div>
+        <span class="input-group-btn">
+          <label class="btn btn-default" type="button" (click)="filterReset()"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></label>
+        </span>
+      </div>
+      <app-recipe-list [recipes]="filteredRecipes"></app-recipe-list>
     </div>
     <div class="col-md-7">
       <router-outlet></router-outlet>
