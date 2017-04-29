@@ -24,15 +24,23 @@ import 'rxjs/add/operator/distinctUntilChanged';
 })
 export class IngredientsComponent implements OnInit {
   
+  ingredientsObservable: Observable<Ingredient[]>;
+  private searchTerms = new Subject<string>();
   ingredients: Ingredient[];
 
   constructor(
-    private ingredientsService: IngredientsService 
+    private iService: IngredientsService,
+    private searchService: IngredientSearchService
   ) { }
 
   ngOnInit() {
-    this.ingredients = this.ingredientsService.getIngredients()
+    this.ingredients = this.iService.getIngredients()
     // console.log(this.ingredients)
   }
+
+  search(value: string){ 
+    this.ingredients = this.searchService.search(value);
+  }
+
 
 }

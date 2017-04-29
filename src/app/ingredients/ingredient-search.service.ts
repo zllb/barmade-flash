@@ -18,7 +18,14 @@ import 'rxjs/add/operator/distinctUntilChanged';
 export class IngredientSearchService {
 
   constructor(
-    
+    private iService: IngredientsService
   ) {}
+
+  search(name: string){ 
+    return this.iService.getIngredients()
+               .filter((i) => { 
+                  return i.name.toLowerCase().includes(name.toLowerCase());
+               })
+  }
 
 }
