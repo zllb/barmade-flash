@@ -1,3 +1,20 @@
-<p>
-  recipe-list works!
-</p>
+<div class="row">
+  <div class="col-xs-12">
+    <table class="table table-responsive table-condensed table-hover">
+      <thead>
+        <tr class="head-margin">
+          <th class="leftHead">Name</th>
+          <th class="centerHead">Category</th>
+          <th class="rightHead"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let recipe of recipes" [routerLink]="[recipe.id]" routerLinkActive="info">
+          <td>{{recipe.name}}</td>
+          <td>{{recipe.description}}</td>
+          <td><span class="pull-right"><img [src]="recipe.imagePath" alt="{{recipe.name}}" class="img-responsive" style="max-height: 50px;"></span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
