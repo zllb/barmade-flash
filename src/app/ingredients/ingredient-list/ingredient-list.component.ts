@@ -8,13 +8,13 @@ import { Ingredient } from '../../shared/ingredient.model';
   styleUrls: ['./ingredient-list.component.css']
 })
 export class IngredientListComponent implements OnInit {
-  
-  @Input() ingredients: Ingredient[]; 
 
-  constructor() { }
+  @Input() filteredIngredients: Ingredient[];
+
+  constructor(
+  ) { }
 
   ngOnInit() {
-    console.log(this.ingredients)
   }
 
 }

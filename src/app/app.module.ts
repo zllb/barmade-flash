@@ -21,7 +21,6 @@ import { DataStorageService } from './shared/data-storage.service';
 import { HeaderComponent } from './header/header.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { SearchComponent } from './search/search.component';
 
 import { RecipesComponent } from './recipes/recipes.component';
 import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component';
@@ -29,6 +28,9 @@ import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.com
 import { IngredientsComponent } from './ingredients/ingredients.component';
 import { IngredientListComponent } from './ingredients/ingredient-list/ingredient-list.component';
 import { IngredientDetailComponent } from './ingredients/ingredient-detail/ingredient-detail.component';
+import { SearchComponent } from './search/search.component';
+import { IngredientsService } from './ingredients/Ingredient.Service';
+import { IngredientSearchService } from './ingredients/ingredient-search.service';
 
 
 @NgModule({
@@ -62,7 +64,7 @@ import { IngredientDetailComponent } from './ingredients/ingredient-detail/ingre
     TabsModule.forRoot(),
     TypeaheadModule.forRoot()
   ],
-  providers: [DataStorageService],
+  providers: [DataStorageService,IngredientsService,IngredientSearchService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
