@@ -5,8 +5,8 @@ export class Recipe {
                 public name: string,
                 public desc: string,
                 public imagePath: string,
-                public categories: string[],
                 public ingredients: Ingredient[],
                 public instructions: string[],
-                public tools?: string[]) { }
+                public tools?: string[],
+                public categories?: string[]) { }
 }
