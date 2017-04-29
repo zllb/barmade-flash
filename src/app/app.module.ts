@@ -17,34 +17,33 @@ import { TabsModule } from 'ngx-bootstrap';
 import { TypeaheadModule } from 'ngx-bootstrap';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-
 import { DataStorageService } from './shared/data-storage.service';
+import { HeaderComponent } from './header/header.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { SearchComponent } from './search/search.component';
+
 import { RecipesComponent } from './recipes/recipes.component';
+import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component';
+import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
 import { IngredientsComponent } from './ingredients/ingredients.component';
 import { IngredientListComponent } from './ingredients/ingredient-list/ingredient-list.component';
 import { IngredientDetailComponent } from './ingredients/ingredient-detail/ingredient-detail.component';
-import { SearchComponent } from './search/search.component';
-import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component';
-import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
-import { LandingPageComponent } from './landing-page/landing-page.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
+    LandingPageComponent,
     DashboardComponent,
+    SearchComponent,
     RecipesComponent,
-    IngredientsComponent,
-    DashboardComponent,
-    IngredientListComponent,
-    IngredientDetailComponent,
-    SearchComponent
     RecipeListComponent,
     RecipeDetailComponent,
-    LandingPageComponent
+    IngredientsComponent,
+    IngredientListComponent,
+    IngredientDetailComponent
   ],
   imports: [
     BrowserModule,
