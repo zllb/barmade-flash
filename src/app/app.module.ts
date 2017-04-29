@@ -18,6 +18,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { IngredientsComponent } from './ingredients/ingredients.component';
 import { RecipesComponent } from './recipes/recipes.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,8 @@ import { RecipesComponent } from './recipes/recipes.component';
     HeaderComponent,
     IngredientsComponent,
     RecipesComponent
+    IngredientsComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
