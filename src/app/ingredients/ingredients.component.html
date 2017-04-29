@@ -1,4 +1,9 @@
-<p>
-  ingredients works!
-</p>
-<app-ingredient-list [ingredients]="ingredients"></app-ingredient-list>
+<h1> Ingredients List </h1>
+<div>
+  <label>  Ingredient Name: </label>
+  <input class="form-control"
+         #searchBox 
+         id="search-box"
+         (keyup)="search(searchBox.value)"> 
+</div>
+<app-ingredient-list [filteredIngredients]="ingredients"></app-ingredient-list>
