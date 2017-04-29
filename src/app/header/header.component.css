@@ -1,6 +1,6 @@
 .navbar-header{
     background-image: url("http://images.all-free-download.com/images/graphiclarge/wood_grain_highdefinition_picture_3_169735.jpg");
-    width: 100vw;
+    width: calc(100vw + 1px);
     height: 80px;
     margin-left: -16px;
     margin-top: -1px;
@@ -10,5 +10,14 @@
    padding-left: 30px;
 }
 .navbar-nav{
-    margin-left: -30px;    
+    margin-left: -30px;  
+    
+}
+.navbar-default{
+    background: linear-gradient(to bottom, #674d3c 10%, #404040 100%);
+    border-width: 2px 2px 5px 2px;
+    border-style: ridge;
+    border-color: black;  
+    margin-left: -1px;
+    margin-right: -1px;
 }

@@ -52,4 +52,12 @@ export class RecipeService {
     );
     return recipe;
   }
+
+  getFilteredRecipes(name: string) {
+    return this.recipes.slice()
+      .filter((r) => {
+        return r.name.toLowerCase().includes(name.toLowerCase());
+      });
+  }
+
 }
