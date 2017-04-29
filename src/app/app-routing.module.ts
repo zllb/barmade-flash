@@ -2,14 +2,13 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { RecipesComponent } from './recipes/recipes.component';
 import { IngredientsComponent } from './ingredients/ingredients.component';
-// import { RecipesComponent } from './recipes/recipes.component';
 
 const appRoutes: Routes = [
   {path: '', component: DashboardComponent},
-  {path: 'ingredients', component: IngredientsComponent},
-  // {path: 'recipes', component: RecipesComponent},
-
+  {path: 'recipes', component: RecipesComponent},
+  {path: 'ingredients', component: IngredientsComponent}
 ];
 
 @NgModule({
