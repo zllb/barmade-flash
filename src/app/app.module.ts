@@ -6,6 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AccordionModule } from 'ngx-bootstrap';
 import { AlertModule } from 'ngx-bootstrap';
+import { ButtonsModule } from 'ngx-bootstrap';
+import { CarouselModule } from 'ngx-bootstrap';
 import { BsDropdownModule } from 'ngx-bootstrap';
 import { PaginationModule } from 'ngx-bootstrap';
 import { ProgressbarModule } from 'ngx-bootstrap';
@@ -24,6 +26,9 @@ import { IngredientsComponent } from './ingredients/ingredients.component';
 import { IngredientListComponent } from './ingredients/ingredient-list/ingredient-list.component';
 import { IngredientDetailComponent } from './ingredients/ingredient-detail/ingredient-detail.component';
 import { SearchComponent } from './search/search.component';
+import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component';
+import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 
 @NgModule({
@@ -37,6 +42,9 @@ import { SearchComponent } from './search/search.component';
     IngredientListComponent,
     IngredientDetailComponent,
     SearchComponent
+    RecipeListComponent,
+    RecipeDetailComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,
@@ -45,6 +53,8 @@ import { SearchComponent } from './search/search.component';
     AppRoutingModule,
     AccordionModule.forRoot(),
     AlertModule.forRoot(),
+    ButtonsModule.forRoot(),
+    CarouselModule.forRoot(),
     BsDropdownModule.forRoot(),
     PaginationModule.forRoot(),
     ProgressbarModule.forRoot(),
