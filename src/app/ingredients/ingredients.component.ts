@@ -35,11 +35,12 @@ export class IngredientsComponent implements OnInit {
 
   ngOnInit() {
     this.ingredients = this.iService.getIngredients()
-    // console.log(this.ingredients)
   }
 
   search(value: string){ 
     this.ingredients = this.searchService.search(value);
+    // TODO: 
+    // This will make far too many http calls, so we need to implent the Subject when the HTTP
   }
 
 

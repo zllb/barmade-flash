@@ -7,6 +7,8 @@ import { RecipesComponent } from './recipes/recipes.component';
 import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component';
 import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
 import { IngredientsComponent } from './ingredients/ingredients.component';
+import { IngredientDetailComponent } from './ingredients/ingredient-detail/ingredient-detail.component';
+
 
 const appRoutes: Routes = [
   { path: '', component: LandingPageComponent },
@@ -15,7 +17,11 @@ const appRoutes: Routes = [
       { path: ':id', component: RecipeDetailComponent }
     ]
   },
-  { path: 'ingredients', component: IngredientsComponent }
+  { path: 'ingredients', component: IngredientsComponent,
+    children: [
+      { path: ':id', component: IngredientDetailComponent }
+    ]
+  }
 ];
 
 @NgModule({

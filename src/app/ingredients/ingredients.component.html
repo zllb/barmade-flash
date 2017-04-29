@@ -1,9 +1,18 @@
-<h1> Ingredients List </h1>
-<div>
-  <label>  Ingredient Name: </label>
-  <input class="form-control"
-         #searchBox 
-         id="search-box"
-         (keyup)="search(searchBox.value)"> 
+<div class="container">
+  <div class="row" >
+    <div class="col-md-5">
+      <h1> Ingredients List </h1>
+      <div>
+        <label>  Ingredient Name: </label>
+        <input class="form-control"
+              #searchBox 
+              id="search-box"
+              (keyup)="search(searchBox.value)"> 
+      </div>
+      <app-ingredient-list [filteredIngredients]="ingredients"></app-ingredient-list>
+    </div>
+    <div class="col-md-7">
+      <app-ingredient-detail></app-ingredient-detail>
+    </div>
+  </div>
 </div>
-<app-ingredient-list [filteredIngredients]="ingredients"></app-ingredient-list>
