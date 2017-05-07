@@ -21,10 +21,8 @@ export class IngredientDetailComponent implements OnInit {
   ngOnInit() {
     this.route.params 
         .subscribe(
-          (params: Params) => { 
-            console.log(params['id']);
+          (params: Params) => {
             this.ingredient = this.ingredientsService.getIngredient(+params['id'])
-            console.log(this.ingredient);
           }
         )
 
