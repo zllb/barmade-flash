@@ -2,6 +2,17 @@ import { Injectable } from '@angular/core';
 
 import { Ingredient } from '../shared/ingredient.model';
 
+import { Observable }        from 'rxjs/Observable';
+import { Subject }           from 'rxjs/Subject';
+
+// Observable class extensions
+import 'rxjs/add/observable/of';
+
+// Observable operators
+import 'rxjs/add/operator/catch';
+import 'rxjs/add/operator/debounceTime';
+import 'rxjs/add/operator/distinctUntilChanged';
+
 @Injectable()
 export class IngredientsService {
 
@@ -27,9 +38,20 @@ export class IngredientsService {
   ]
 
   getIngredients(){ 
-    return this.ingredients.slice()
+    return this.ingredients.slice();
   }
 
-  
+  getIngredient(id: number){ 
+    const ingredient = this.ingredients.find(
+      (x) => {
+        return x.id === id;
+    });
+
+    return ingredient;
+  }
+
+  getIngredientsObservable(){ 
+    return Observable.of(this.ingredients);
+  }
 
 }

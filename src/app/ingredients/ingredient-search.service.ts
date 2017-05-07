@@ -7,6 +7,7 @@ import { Subject }           from 'rxjs/Subject';
 
 // Observable class extensions
 import 'rxjs/add/observable/of';
+// import 'rxjs/add/observable/switch'
 
 // Observable operators
 import 'rxjs/add/operator/catch';
@@ -26,6 +27,10 @@ export class IngredientSearchService {
                .filter((i) => { 
                   return i.name.toLowerCase().includes(name.toLowerCase());
                })
+  }
+
+  obsSearch(term: string){
+    return this.iService.getIngredientsObservable()
   }
 
 }

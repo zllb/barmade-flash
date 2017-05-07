@@ -10,7 +10,8 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let ingredient of filteredIngredients">
+        <tr *ngFor="let ingredient of filteredIngredients"
+            [routerLink]="[ingredient.id]" routerLinkActive="info">
           <td>{{ingredient.name}}</td>
           <td>{{ingredient.description}}</td>
         </tr>
