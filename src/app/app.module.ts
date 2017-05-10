@@ -20,7 +20,6 @@ import { AppComponent } from './app.component';
 import { DataStorageService } from './shared/data-storage.service';
 import { HeaderComponent } from './header/header.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 
 import { RecipesComponent } from './recipes/recipes.component';
 import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component';
@@ -31,6 +30,7 @@ import { IngredientDetailComponent } from './ingredients/ingredient-detail/ingre
 import { SearchComponent } from './search/search.component';
 import { IngredientsService } from './ingredients/Ingredient.Service';
 import { IngredientSearchService } from './ingredients/ingredient-search.service';
+import { MixingGlassComponent } from './mixing-glass/mixing-glass.component';
 
 
 @NgModule({
@@ -38,14 +38,14 @@ import { IngredientSearchService } from './ingredients/ingredient-search.service
     AppComponent,
     HeaderComponent,
     LandingPageComponent,
-    DashboardComponent,
     SearchComponent,
     RecipesComponent,
     RecipeListComponent,
     RecipeDetailComponent,
     IngredientsComponent,
     IngredientListComponent,
-    IngredientDetailComponent
+    IngredientDetailComponent,
+    MixingGlassComponent
   ],
   imports: [
     BrowserModule,
