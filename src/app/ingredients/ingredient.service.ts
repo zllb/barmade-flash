@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Ingredient } from '../shared/ingredient.model';
 
 import { Observable }        from 'rxjs/Observable';
-import { Subject }           from 'rxjs/Subject';
+// import { Subject }           from 'rxjs/Subject';
 
 // Observable class extensions
 import 'rxjs/add/observable/of';

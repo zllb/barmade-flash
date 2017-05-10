@@ -28,7 +28,7 @@ import { IngredientsComponent } from './ingredients/ingredients.component';
 import { IngredientListComponent } from './ingredients/ingredient-list/ingredient-list.component';
 import { IngredientDetailComponent } from './ingredients/ingredient-detail/ingredient-detail.component';
 import { SearchComponent } from './search/search.component';
-import { IngredientsService } from './ingredients/Ingredient.Service';
+import { IngredientsService } from './ingredients/ingredient.service';
 import { IngredientSearchService } from './ingredients/ingredient-search.service';
 import { MixingGlassComponent } from './mixing-glass/mixing-glass.component';
 
